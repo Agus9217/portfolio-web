@@ -1,13 +1,5 @@
-const toogleBtn = document.getElementById('btn-menu') 
-const navBar = document.getElementById('navbar')
-const detailsBtn = document.getElementById('details')
+const btnMenu = document.getElementById('btn-menu')
 
-toogleBtn.addEventListener('click', () => {
-  toogleBtn.classList.toggle("change") 
-  navBar.classList.toggle("show")
-})
-
-
-detailsBtn.addEventListener('click', (e) => {
-  console.dir(e)
+btnMenu.addEventListener('click', () => {
+  btnMenu.classList.toggle('change')
 })
