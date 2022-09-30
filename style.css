@@ -175,9 +175,18 @@
   transition: 0.3s;
 }
 
-.slide-left:hover {
-	-webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+@media (min-width:767px) {
+  .slide-left:hover {
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .slide-right:hover {
+    -webkit-animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
 }
 
 @-webkit-keyframes slide-left {
@@ -201,14 +210,15 @@
   }
 }
 
+@media () {
+  
+}
+
 .active {
   color: var(--red);
 }
 
-.slide-right:hover {
-	-webkit-animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+
 
 @-webkit-keyframes slide-right {
   0% {
