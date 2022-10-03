@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+  --black: #2B2D42;
+  --grey: #8D99AE;
+  --white: #EDF2F4;
+  --red: #D90429;
+  --pink-red: #EF233C;
+ }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.digital-title, .cover-title  {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.digital-title > h2, .cover-title > h2 {
+  font-size: 10rem;
+}
+
+.digital-title-red {
+  color: var(--red);
+}
+
+.digital-title > span {
+  font-size: 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 100%;
+  padding: 65px 20px;
+  transform: rotate(-5deg);
+}
+
+.digital-title > span:hover {
+  color: var(--red);
+  border-color: var(--red);
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+
+.cover-title > span {
+  color: var(--grey);
+  font-size: 3rem;
+  max-width: 190px;
+  text-align: center;
+}
+
+.hero {
+  background: var(--black);
+  color: var(--white);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: var(--grey);
+  min-height: 50px;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.navbar-link {
+  color: var(--black);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: linear 0.3s;
+}
+
+.navbar-link:hover {
+  color: var(--red);
+}
